@@ -1,0 +1,127 @@
+@import "../../../data/styles.css";
+
+.footer {
+	display: flex;
+	padding-top: 25px;
+	margin-top: 50px;
+	padding-bottom: 25px;
+	align-items: center;
+}
+
+.footer-links,
+.footer-credits {
+	flex-basis: 50%;
+}
+
+.footer-links {
+	margin-left: -40px;
+}
+
+.footer-nav-link-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-nav-link-item {
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.footer-nav-link-list a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+.footer-nav-link-list a:hover {
+	color: var(--link-color);
+}
+
+.footer-credits-text {
+	justify-content: flex-end;
+	color: var(--tertiary-color);
+	font-size: 14px;
+	text-align: right;
+}
+
+.footer-social-links {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-social-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: var(--tertiary-color);
+	font-size: 14px;
+	transition: color 0.3s ease, transform 0.2s ease;
+	padding: 8px 12px;
+	border-radius: 6px;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover {
+	color: var(--link-color);
+	transform: translateY(-2px);
+	background: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-social-link svg {
+	width: 16px;
+	height: 16px;
+}
+
+.footer-social-link span {
+	font-weight: 500;
+}
+
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column;
+		height: auto;
+		padding: 20px 0;
+	}
+
+	.footer-links {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.footer-nav-link-list {
+		width: 100%;
+	}
+
+	.footer-credits-text {
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	.footer-social-links {
+		justify-content: center;
+		gap: 15px;
+	}
+
+	.footer-social-link {
+		padding: 6px 10px;
+		font-size: 13px;
+	}
+
+	.footer-social-link span {
+		display: none;
+	}
+
+	.footer-social-link svg {
+		width: 18px;
+		height: 18px;
+	}
+}
