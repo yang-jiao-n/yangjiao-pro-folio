@@ -13,15 +13,12 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import StoryCard from "../components/homepage/storyCard";
 import StoryDetails from "../components/homepage/storyDetails";
-import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 import Stories from "../data/stories";
 
 import "./styles/homepage.css";
