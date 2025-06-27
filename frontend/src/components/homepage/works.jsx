@@ -52,7 +52,8 @@ const Works = () => {
 							/>
 							<div className="work-title">Meta Inc.</div>
 							<div className="work-subtitle">
-								Senior Software Engineer (Search)
+								Senior Software Engineer (Supply Chain & FB
+								Search)
 							</div>
 							<div className="work-duration">
 								01/2021 – 01/2023
